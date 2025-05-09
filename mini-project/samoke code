@@ -1,0 +1,19 @@
+# split BOARD into LIST
+board = """\
+    R...
+    .K..
+    ..P.
+    ....\
+    """
+
+# Option 1: Using splitlines()
+rows = board.splitlines()
+
+# Option 2: Using split with '\n'
+rows = board.split('\n')
+
+# Optional: Remove leading/trailing whitespace from each line
+rows = [row.strip() for row in rows]
+
+print(rows)
+
